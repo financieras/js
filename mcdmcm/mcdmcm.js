@@ -56,4 +56,4 @@ do {                                                    //algoritmo de Euclides
 	n2=resto;
 } while (resto=0);
 
-document.write('El MCD es "+mcd+'<br>');
+document.write('El MCD es '+mcd+'<br>');
