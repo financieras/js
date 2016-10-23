@@ -62,6 +62,6 @@ document.write('El MCD es '+mcd+'<br>');
 document.write('El mcm es '+a*b/mcd+'<br>');
 if (mcd>1){
 	document.write('Podemos simplificar la fracción siguiente:<br>'+a+' / '+b+' = '+a/mcd+' / '+b/mcd);
-} elseif (mcd===1){
+} else if (mcd===1){
 	document.write('La fracción siguiente no se puede simplificar:<br>'+a+' / '+b);
 }
