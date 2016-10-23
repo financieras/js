@@ -6,14 +6,15 @@ do{
 do{
 	var n2 = parseInt(prompt("Dime el segundo número (de 1 a un billón)", 1032));
 }while(isNaN(n2) || n2> 1000000000000 || n2< 1 || n2%1!==0);
-var a=n1;
-var b=n2;
+
 
 if (n2>n1){                                    //queremos que n1 sea el mayor
 	var z=n1;
 	n1=n2;
 	n2=z
 }
+var a=n1;
+var b=n2;
 
 for (var j=1;j<=2;j++){
 	if (j===1){
