@@ -1,10 +1,10 @@
 document.write('<h1>Máximo común divisor (MCD) y mínimo comúm múltiplo (mcm)</h1>');
 document.write('<h2>Dados dos números calcular el MCD y el mcm</h2>');
 do{
-	var n1 = prompt("Dime el primer número (de 1 a un billón)", 180);
+	var n1 = prompt("Dime el primer número (de 1 a un billón)", 1032);
 }while(isNaN(n1) || n1> 1000000000000 || n1< 1 || n1%1!==0);
 do{
-	var n2 = prompt("Dime el segundo número (de 1 a un billón)", 1032);
+	var n2 = prompt("Dime el segundo número (de 1 a un billón)", 180);
 }while(isNaN(n2) || n2> 1000000000000 || n2< 1 || n2%1!==0);
 
 if (n2>n1){                                    //queremos que n1 sea el mayor
