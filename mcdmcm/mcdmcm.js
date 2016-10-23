@@ -21,9 +21,9 @@ for (var j=1;j<=2;j++){
     	contador++;
 	}
 	if (contador>1){
-		texto += 2+"<sup>"+contador+"</sup> x ";
+		texto += 2+"<sup>"+contador+"</sup> × ";
 	} else if (contador===1){
-		texto += "2 x ";
+		texto += "2 × ";
 	}
 	
 	for (var i=3;i<=n;i=i+2){
@@ -33,9 +33,9 @@ for (var j=1;j<=2;j++){
     		contador++;
 		}
 		if (contador>1){
-			texto += i+"<sup>"+contador+"</sup> x ";
+			texto += i+"<sup>"+contador+"</sup> × ";
 		} else if (contador===1){
-			texto += i+" x ";
+			texto += i+" × ";
 		}
 	}
 	
