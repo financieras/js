@@ -1,5 +1,5 @@
-console.log('Máximo común divisor (MCD) y mínimo comúm múltiplo (mcm)');
-console.log('Dados dos números calcular el MCD y el mcm');
+document.write('<h1>Máximo común divisor (MCD) y mínimo comúm múltiplo (mcm)</h1>');
+document.write('<h2>Dados dos números calcular el MCD y el mcm</h2>');
 do{  
 	var n1 = prompt("Dime el primer número (de 1 a un billón)", 9805035240);
 }while(isNaN(n1) || n1> 1000000000000 || n1< 1 || n1%1!==0);
@@ -77,9 +77,9 @@ for (var j=1;j<=2;j++){
 	}
 	
 	texto += 1;
-	console.log(texto);
+	document.write(texto+'<br>');
 }
 
 for(s=1;s<=fila;s++){		
-	console.log ("fila "+s+"="+A[3][s]+", "+A[1][s]+", "+A[2][s]);
+	document.write ("fila "+s+"="+A[3][s]+", "+A[1][s]+", "+A[2][s]+'<br>');
 }
