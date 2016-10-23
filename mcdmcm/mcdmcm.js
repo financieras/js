@@ -13,7 +13,7 @@ for (var j=1;j<=2;j++){
 	} else if (j===2) {
 		n=n2;
 	}
-	var texto=n+'=';
+	var texto=n+' = ';
 	
 	var contador=0;
 	while (n%2===0) {
