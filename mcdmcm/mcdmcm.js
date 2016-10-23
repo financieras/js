@@ -21,7 +21,7 @@ for (var j=1;j<=2;j++){
     	contador++;
 	}
 	if (contador>1){
-		texto += 2+"^"+contador+"x";
+		texto += 2+"<sup>"+contador+"</sup> x ";
 	} else if (contador===1){
 		texto += "2x";
 	}
@@ -33,7 +33,7 @@ for (var j=1;j<=2;j++){
     		contador++;
 		}
 		if (contador>1){
-			texto += i+"^"+contador+"x";
+			texto += i+"<sup>"+contador+"</sup> x ";
 		} else if (contador===1){
 			texto += i+"x";
 		}
