@@ -23,7 +23,7 @@ for (var j=1;j<=2;j++){
 	if (contador>1){
 		texto += 2+"<sup>"+contador+"</sup> x ";
 	} else if (contador===1){
-		texto += "2x";
+		texto += "2 x ";
 	}
 	
 	for (var i=3;i<=n;i=i+2){
@@ -35,7 +35,7 @@ for (var j=1;j<=2;j++){
 		if (contador>1){
 			texto += i+"<sup>"+contador+"</sup> x ";
 		} else if (contador===1){
-			texto += i+"x";
+			texto += i+" x ";
 		}
 	}
 	
