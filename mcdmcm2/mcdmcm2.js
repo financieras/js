@@ -4,6 +4,7 @@ function myFunction() {
     x = document.getElementById("num1").value;
     y = document.getElementById("num2").value;
     z = document.getElementById("num3").value;
+    document.getElementById("calculaMCDmcm").style.color="blue";
     if (isNaN(x) || isNaN(y)) {
         text = "Es necesarios introducir dos números válidos. El tercer valor es opcional.";
         document.getElementById("calculaMCDmcm").style.color="#FF0000";
