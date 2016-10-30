@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Sumar dos números</h1>
+
+<p>Por favor, introduce dos números:</p>
+
+<input id="num1"><br>
+<input id="num2">
+<button type="button" onclick="myFunction()">Sumar</button>
+
+<p id="sumando"></p>
+
+<script>
+function myFunction() {
+    var x,y,suma,text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("num1").value;
+    y = document.getElementById("num2").value;
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || isNaN(y)) {
+        text = "Es necesarios introducir dos números válidos";
+    } else {
+        suma=parseFloat(x)+parseFloat(y); //si no ponemos parseFloat concatenaría x con y
+        text= suma;
+    }
+    document.getElementById("sumando").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
