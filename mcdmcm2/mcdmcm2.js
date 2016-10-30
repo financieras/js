@@ -4,14 +4,14 @@ function myFunction() {
     x = document.getElementById("num1").value;
     y = document.getElementById("num2").value;
     z = document.getElementById("num3").value;
-    document.getElementById("calculaMCDmcm").style.color="blue";
+    document.getElementById("calculo").style.color="blue";
     if (isNaN(x) || isNaN(y)) {
         text = "Es necesarios introducir dos números válidos. El tercer valor es opcional.";
-        document.getElementById("calculaMCDmcm").style.color="#FF0000";
+        document.getElementById("calculo").style.color="#FF0000";
     } else {
         suma=parseFloat(x)+parseFloat(y)+parseFloat(z);
         text= suma;
     }
-    document.getElementById("calculaMCDmcm").innerHTML = text;
+    document.getElementById("calculo").innerHTML = text;
     
 }
