@@ -11,6 +11,6 @@ function myFunction() {
         text= suma;
     }
     //document.getElementById("calculaMCDmcm").innerHTML = text;
-    var col=document.getElementById("calculaMCDmcm");
-    col.style.color="#FF0000";
+    //var col=document.getElementById("calculaMCDmcm");
+    //col.style.color="#FF0000";
 }
