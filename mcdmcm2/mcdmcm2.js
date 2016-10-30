@@ -1,5 +1,3 @@
-document.write('<h1>Máximo común divisor (MCD) y mínimo comúm múltiplo (mcm)</h1>');
-document.write('<h2>Dados dos números calcular el MCD y el mcm</h2>');
 do{
 	var n1 = parseInt(prompt("Dime el primer número (de 1 a un billón)", 300));
 }while(isNaN(n1) || n1> 1000000000000 || n1< 1 || n1%1!==0);
