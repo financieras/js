@@ -15,15 +15,13 @@
 <script>
 function myFunction() {
     var x,y,suma,text;
-
-    // Get the value of the input field with id="numb"
     x = document.getElementById("num1").value;
     y = document.getElementById("num2").value;
-    // If x is Not a Number or less than one or greater than 10
     if (isNaN(x) || isNaN(y)) {
         text = "Es necesarios introducir dos números válidos";
     } else {
-        suma=parseFloat(x)+parseFloat(y); //si no ponemos parseFloat concatenaría x con y
+		//si no ponemos parseFloat concatenaría x con y
+        suma=parseFloat(x)+parseFloat(y);
         text= suma;
     }
     document.getElementById("sumando").innerHTML = text;
