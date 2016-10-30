@@ -11,4 +11,5 @@ function myFunction() {
         text= suma;
     }
     document.getElementById("calculaMCDmcm").innerHTML = text;
+    document.getElementById("calculaMCDmcm").style.color = "blue";
 }
