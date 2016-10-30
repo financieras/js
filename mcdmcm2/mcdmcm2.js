@@ -10,7 +10,6 @@ function myFunction() {
         suma=parseFloat(x)+parseFloat(y)+parseFloat(z);
         text= suma;
     }
-    //document.getElementById("calculaMCDmcm").innerHTML = text;
-    var col=document.getElementById("calculaMCDmcm");
-    //col.style.color="#FF0000";
+    document.getElementById("calculaMCDmcm").innerHTML = text;
+    document.getElementById("calculaMCDmcm").style.color="#FF0000";
 }
