@@ -1,4 +1,4 @@
-var x,y,z,mcd,text,text2,resulta;
+var x,y,z,mcd,text,text2,text3,resulta;
 function myFunction() {
     x = parseFloat(document.getElementById("num1").value);
     y = parseFloat(document.getElementById("num2").value);
@@ -29,6 +29,11 @@ function myFunction() {
 		document.getElementById("calculo").innerHTML = text;
 		document.getElementById("calculo2").innerHTML = text2;
 		document.getElementById("calculo2").style.color="blue";
+	
+		var text3=x+' / '+mcd+' = '+x/mcd+'<br>'+y+' / '+mcd+' = '+y/mcd+'<br>';
+		if (!isNaN(z)){text3 += z+' / '+mcd+' = '+z/mcd+'<br>'}
+		document.getElementById("calculo3").innerHTML = text3;
+		document.getElementById("calculo3").style.color="magenta";
 }
 
 function calculaMCD(n1,n2){
