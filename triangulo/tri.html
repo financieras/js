@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Factibilidad de un triángulo y su área</title>
+  </head>
+  <body>
+   <h1 style="color:blue;">Factibilidad de un triángulo cualquiera</h1>
+   <p>Por favor, introduce las longitures de los tres lados del triángulo.</p>
+   <p>Luego pulsa el botón y te dirá si el triángulo es factible y en caso afirmativo te dará el área.</p>
+   <p>Para el cálculo del área se usa la <a href="https://es.wikipedia.org/wiki/Formula_de_Heron">fórmula de Herón</a></p>
+   <p>Un triángulo es factible cuando se cumple que <a href="https://es.wikipedia.org/wiki/Desigualdad_triangular">
+   la suma de las longitudes de dos lados cualquiera es siempre mayor a la longitud del lado restante</a>.</p>
+   <input id="num1" value="3"><br>
+   <input id="num2" value="4"><br>
+   <input id="num3" value="5">
+   <button type="button" onclick="myFunction()">Calcular</button>
+   <p id="resultado"></p>
+   <script>
+     function myFunction()
+      {
+       var a,b,c,max,s,area,text;
+    	 a = parseFloat(document.getElementById("num1").value);
+       b = parseFloat(document.getElementById("num2").value);
+    	 c = parseFloat(document.getElementById("num3").value);
+       if (isNaN(a) || isNaN(b) || isNaN(c) || a<=0 || b<=0 || c<=0)
+        {
+         text = "Es necesarios introducir tres números válidos";
+        }
+       else
+        {
+    		 max=Math.max(a,b,c);
+    		 s=(a+b+c)/2;
+    		 area=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+         switch (max) {
+    			 case a:
+    				if (b+c>a){
+    					text="El triángulo si es factible "+b+"+"+c+">"+a+"<br>";
+    					text = text + "El área es "+area+".";
+    				} else {
+    					text="El triángulo no es factible: "+b+"+"+c+"<="+a;
+    				}
+    				break;
+    			 case b:
+    				if (a+c>b){
+    					text="El triángulo si es factible "+a+"+"+c+">"+b+"<br>";
+    					text = text + "El área es "+area+".";
+    				} else {
+    					text="El triángulo no es factible: "+a+"+"+c+"<="+b;
+    				}
+    				break;
+    			 case c:
+    				if (b+a>c){
+    					text="El triángulo si es factible: "+a+"+"+b+">"+c+"<br>";
+    					text = text + "El área es "+area+".";
+    				} else {
+    					text="El triángulo no es factible "+a+"+"+b+"<="+c;
+    				}
+    		 }
+        }
+       document.getElementById("resultado").innerHTML = text;
+     }
+   </script>
+  </body>
+</html>
