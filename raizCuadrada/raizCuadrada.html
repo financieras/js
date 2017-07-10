@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Algoritmo de cálculo de la Raíz cuadrada en Javascript</title>
+  </head>
+  <body>
+    <script>
+      var x=Math.floor(prompt("Indique el número",40));
+      var inf=0;
+      var sup=x;
+      var media=(inf+sup)/2;
+      var ciclos=0;
+      console.log("x: "+x);
+      while(Math.abs(Math.pow(media,2)-x)>1e-16 && ciclos<1000){
+      console.log("inf: "+inf);
+      console.log("sup: "+sup);
+      console.log("media: "+media);
+      console.log("_____________");
+      if (Math.pow(media,2)<x){
+        inf=media;
+      }else{
+        sup=media;
+      }
+      media=(inf+sup)/2;
+      ciclos++; //ciclos evita que se quede pillado el código por haber pedido una precisión tan fina
+      //se podría haber quitado ciclos si la precisión fuera 1e-14
+      }
+      document.write(media +" valor calculado"+"<br>");
+      document.write(Math.sqrt(x,2)+" raiz cuadrada"+"<br>");
+      document.write(Math.abs(Math.sqrt(x,2)-media)+" Error");
+    </script>
+  </body>
+</html>
